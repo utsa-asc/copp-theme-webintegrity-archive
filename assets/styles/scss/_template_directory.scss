@@ -1,0 +1,286 @@
+
+section.directory-nav {
+    text-align: center;
+    background-color: $blue;
+}
+
+.directory-search {
+  padding: 20px 0;
+}
+
+.directory-search-form input.search-field {
+    display: inline-block;
+    width: auto;
+    color: #cacaca;
+    margin-left: 15px;
+    border: none;
+    border-bottom: 2px solid #cacaca;
+    box-shadow: none;
+    height: 25px;
+}
+
+.directory-menu {
+  display: block;
+  position: relative;
+
+    .tabs {
+        border: none;
+        background-color: transparent;
+        display: inline-flex;
+    }
+
+    .tabs-title {
+
+        a {
+          color: $white;
+          padding: 20px;
+          font-size: .8rem;
+          text-transform: uppercase;
+          transition: all .3s ease;
+          font-weight: 500;
+          border-bottom: 3px solid transparent;
+
+          &:hover {
+            transition: all .3s ease;
+          }
+        }
+    }
+
+    .tabs-title>a:focus, .tabs-title>a[aria-selected=true], .tabs-title>a:hover {
+        background: none;
+        border-bottom: 3px solid #f15922;
+    }
+
+}
+
+.h4.classification {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $medium-gray;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.classification-title {
+  display: flex;
+
+  span.divider {
+      margin-right: 0;
+      margin-left: 30px;
+      top: 15px;
+  }
+
+  span.divider:before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+    .directory-menu .tabs .tabs-title a {
+        font-size: .9rem;
+        padding: 10px;
+    }
+}
+
+.directory-content {
+
+    .tabs-content {
+        border: none;
+        background: none;
+    }
+}
+
+.dir-image{
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.directory-block {
+    background-color: $white;
+    margin: 10px;
+    position: relative;
+
+    .btn {
+        color: $white;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    .dir-info {
+      @media only screen and (min-width: 1024px) {
+        padding: 20px 0;
+      }
+
+        p.title {
+            font-weight: 100;
+        }
+
+        p, a {
+            padding: 0;
+            margin: 0;
+            color: $black;
+            transition: color .3s ease;
+            font-size: 1rem;
+        }
+
+        a.email {
+          color: $orange;
+          font-weight: 600;
+          font-size: .9rem;
+        }
+
+        a.phone {
+          color: $dark-gray;
+          display: block;
+        }
+
+        a:hover {
+            color: $orange;
+            transition: color .3s ease;
+        }
+
+        .h4 {
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin: 12px 0 0 0;
+        }
+    }
+}
+
+.inner-content .directory-block {
+    margin: 40px auto;
+}
+
+.dir-single {
+    padding: 0;
+    margin: 30px 0 0 0;
+
+
+    .dir-header {
+        padding: 20px 20px 14px 20px;
+    }
+
+    .dir-info {
+        h3 {
+            color: $orange;
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+            font-size: 1.5rem;
+        }
+        p, a {
+            font-size: 1rem;
+        }
+        p.title {
+            margin-bottom: 16px;
+        }
+
+    }
+
+    .dir-content {
+        padding: 10px;
+    }
+}
+
+ul.dir-nav {
+    margin: 0;
+    list-style: none;
+    display: block;
+    padding-left: 50px;
+
+    a {
+        color: $orange;
+    }
+}
+
+ul.dir-nav li {
+    display: inline-block;
+    color: black;
+    font-size: .9rem;
+    padding: 15px 20px;
+}
+
+.directory-card {
+  .dir-image {
+    height: 300px;
+  }
+
+  span.divider {
+    width: 100%;
+  }
+
+  .h5 {
+    text-transform: uppercase;
+  }
+
+  .title-text {
+    font-size: .9rem;
+    color: $dark-gray;
+    margin-top: 20px;
+  }
+
+  a, p {
+    font-size: .9rem;
+  }
+
+  .email {
+    color: $orange;
+  }
+}
+
+.reveal {
+    border-bottom: 5px solid $orange;
+}
+
+.directory.accordion {
+    background-color: transparent;
+    li.accordion-item {
+        border-radius: 0;
+    }
+    a {
+        color: $orange;
+        background-color: white;
+        border-radius: 0;
+    }
+
+    .accordion-item:first-child>:first-child, &.accordion .accordion-item:last-child>:last-child, &.accordion :last-child:not(.is-active)>.accordion-title, &.accordion:last-child>.accordion-content:last-child {
+        border-radius: 0;
+    }
+    .accordion-content, .accordion .accordion-title {
+      border-radius: 0;
+      padding-left: initial;
+    }
+
+    .fancy-header:after, .fancy-header:before {
+      display: none;
+    }
+
+    &.accordion .accordion-title:focus, &.accordion .accordion-title:hover {
+      background-color: $white;
+    }
+
+    .h3 {
+      font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width:470px) {
+    .directory-block a.btn.btnPrimary {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .directory-block.dir-single .dir-header {
+        padding: 50px;
+    }
+
+    .dir-single .dir-content {
+        padding: 50px;
+    }
+}

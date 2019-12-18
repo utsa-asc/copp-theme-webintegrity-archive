@@ -1,0 +1,141 @@
+#banner {
+    border-bottom: 3px solid #f15a22;
+    background-color: #0c2340;
+}
+
+.top-link {
+    margin-left: .6rem!important;
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+
+.headerSearchContainer {
+    display: none;
+    background: #0c2340;
+}
+
+.navbar-dark .navbar-brand, .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-toggler, .navbar-dark .navbar-toggler:focus, .navbar-dark .navbar-toggler:hover {
+    color: #fff;
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-toggler .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+
+.navbar-toggler .icon-bar {
+    background: #fff;
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.linkmobile {
+    font-size: .68rem;
+    color: #fff;
+    margin-left: 2px;
+    transition: all .3s ease 0s;
+}
+
+.navbar-nav .nav-link {
+    padding-bottom: 4px;
+    font-size: .95rem;
+}
+
+.navbar-nav .nav-link {
+    display: block;
+    padding-top: .425rem;
+    padding-bottom: .425rem;
+}
+
+img.logoFull {
+    margin: 13px 10px;
+}
+
+#global-header i {
+    color: #f15a22;
+}
+#global-header ul.navbar-nav li.nav-item {
+    display: inline-block;
+}
+
+@media screen and (max-width: 1024px){
+.logo {
+    width: 80px;
+    padding-bottom: 10px!important;
+    margin-top: 7px;
+}
+}
+
+@media screen and (max-width: 1024px){
+    .logo, .nav {
+        padding-top: 5px!important;
+    }
+    .mobile-hide {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 1024px){
+    .navbar-toggleable-md {
+        display: block!important;
+    }
+    .navbar-nav .nav-item+.nav-item, .navbar-nav .nav-link+.nav-link {
+        margin-left: 1rem;
+    }
+
+
+}
+
+ul.nav.navbar-nav.text-left.large-text-right {
+    list-style: none;
+}
+
+.collapse {
+    display: none;
+}
+
+.navbar-nav {
+    padding-top: 10px!important;
+}
+
+#startupNavbar ul {
+    margin: 0;
+}
+
+
+.collapse.in {
+    display: block;
+}
+
+#global-header .collapse.in li.nav-item {
+    display: block;
+    border-bottom: 1px solid #223247;
+}
+
+.headerSearchContainer input {
+    left: 5%;
+    padding: .8em 0;
+    margin: .8em 0 1.2em;
+    text-indent: 15px;
+    width: 90%;
+    border: 1px solid #999;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    background: #fff;
+}
+
+@media screen and (max-width: 1150px){
+    .navbar-nav .nav-link {
+        font-size: .8rem;
+    }
+}

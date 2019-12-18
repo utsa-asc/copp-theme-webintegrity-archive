@@ -1,0 +1,1149 @@
+/************************************************
+
+Stylesheet: Global Stylesheet
+
+*************************************************/
+
+/*********************
+HEADER STYLES
+*********************/
+.top-bar {
+    padding: 70px 0;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    align-items: initial;
+
+    a {
+        color: $white;
+        font-weight: 400;
+        transition: all .3s ease;
+        font-size: .9rem;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    .is-dropdown-submenu {
+
+        li {
+            display:inherit;
+            padding-bottom: 10px;
+        }
+
+        a {
+            /*
+            font-style: italic;
+            */
+            padding: 1rem 1rem;
+            text-transform: none;
+            text-align: left;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+
+    ul#menu-primary-menu-1 {
+      display: block;
+
+      li {
+        display: inline-block;
+      }
+
+    }
+}
+
+li.menu-cta a {
+    border: 2px solid $orange;
+    border-radius: 100px;
+    padding: .6rem 1rem .35rem 1rem !important;
+    font-size: .7rem;
+    letter-spacing: 1px;
+    transition: all .3s ease;
+    font-family: $gotham;
+    font-weight: 700;
+
+    &:hover {
+      background-color: $orange;
+      color: $white;
+    }
+}
+
+.top-bar .dropdown.menu .submenu a {
+    font-size: .8rem;
+}
+
+.top-bar .dropdown.menu .submenu a {
+    margin-top: 10px;
+}
+
+.top-bar .dropdown.menu .submenu li.menu-item-has-children li a {
+    margin-top: 0px;
+}
+
+header.header {
+    position: absolute;
+    width: 100%;
+}
+
+
+.is-dropdown-submenu-parent.opens-left>.is-dropdown-submenu {
+    right: 0;
+    left: 0;
+    width: fit-content;
+}
+ul.submenu .submenu {
+    display: -webkit-inline-box;
+    position: relative;
+    border: none;
+
+    a {
+        font-weight: 100;
+        color: $grey;
+    }
+}
+
+
+.hero .gradient {
+    padding: 240px 0 100px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+    .hero .gradient {
+        padding: 300px 0 200px 0;
+    }
+}
+
+.inner.hero {
+    border-bottom: 10px solid $orange;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .gradient {
+      padding: 240px 0 40px 0;
+    }
+
+    .h1, h1 {
+        margin-bottom: 20px;
+        position: relative;
+        text-transform: uppercase;
+    }
+}
+
+.inner-content {
+
+  .fancy-header {
+    margin-top: 40px;
+  }
+
+  ul.checklist{
+    list-style: none;
+      li {
+          position: relative;
+          text-indent: 0px;
+          padding-left: 20px;
+
+        &:before {
+          position: absolute;
+          content: '\f00c';
+          font-family: "FontAwesome";
+          left: -10px;
+          color: $orange;
+        }
+      }
+  }
+
+  .departments {
+    padding: 80px 0 80px 0;
+  }
+}
+
+.header-logo {
+    width: auto;
+    margin: 0 20px;
+    max-width: 100%;
+}
+
+.dropdown.menu.medium-horizontal>li.opens-left>.is-dropdown-submenu {
+    top: 100%;
+    left: 0%;
+    transform: translateX(-13%);
+}
+
+.off-canvas a {
+    font-size: 1.2rem;
+    color: $blue;
+}
+
+.position-right {
+    width: 300px;
+}
+
+.off-canvas-content .off-canvas.position-right, .position-right {
+    -webkit-transform: translateX(350px);
+    transform: translateX(350px);
+}
+
+.top-bar .top-bar-left, .top-bar .top-bar-right {
+    margin: 0;
+}
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+a {
+  transition: all .3s ease;
+}
+
+.restricted-width {
+    max-width: 100rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.accordion {
+
+    .accordion-title:before {
+        position: absolute;
+        top: 50%;
+        right: inherit;
+        left: 1rem;
+        margin-top: -.5rem;
+        content: "\f106";
+        font-family: "FontAwesome";
+        color: $orange;
+    }
+
+    .is-active>.accordion-title:before {
+        content: "\f107";
+        font-family: "FontAwesome";
+    }
+
+    .accordion-title, .accordion-content {
+        border: none;
+        transition: all .3s ease;
+        padding-left: 3rem;
+        border-radius: 30px;
+    }
+
+    .accordion-title {
+        color: $header-blue;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .accordion-title:hover, .accordion-title:focus {
+        background-color: transparent;
+        color: $orange;
+    }
+
+    &:last-child>.accordion-content:last-child,.accordion-item:first-child>:first-child, .accordion-item:last-child>:last-child,:last-child:not(.is-active)>.accordion-title {
+      border-radius: 30px;
+    }
+
+    .accordion-item {
+        border: 2px solid $orange;
+        border-radius: 30px;
+        margin: 10px auto;
+    }
+}
+
+.article-header h3.title {
+    font-size: 1rem;
+    color: $blue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+
+    &:hover {
+        color: $orange;
+    }
+}
+
+.archive-grid {
+    .h5 {
+      margin-bottom: 10px;
+    }
+
+    .post-info {
+      padding: 15px 0;
+    }
+
+    .post-info p {
+        margin: 0;
+        padding: 0;
+        color: $blue;
+        font-weight: 400;
+        transition: all .3s ease;
+        font-size: .8rem;
+    }
+
+    .post-info a {
+        color: $orange;
+        font-weight: 700;
+        transition: all .3s ease;
+        font-size: .8rem;
+    }
+
+    .panel {
+        margin: 10px auto;
+        transition: all .3s ease;
+    }
+
+    .panel:hover {
+
+        box-shadow: 4px 4px 20px 5px #d4d4d4;
+
+        .post-info p {
+            color: #8a8a8a;
+            transition: all .3s ease;
+        }
+
+        .post-info a {
+            transition: all .3s ease;
+            color: #f28236;
+        }
+    }
+}
+
+
+
+.content {
+    padding: 40px 0;
+}
+
+.inner-content {
+    margin: 0 auto;
+}
+
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
+    color: $blue;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+a p, a div {
+  color: $blue;
+}
+
+.button.transparent {
+    color: $orange;
+
+    &:hover {
+      color: $white;
+      background-color: $orange;
+    }
+}
+
+.subtext {
+    font-style: italic;
+}
+
+.fancy-header{
+  position: relative;
+
+  &:before {
+      height: 2px;
+      width: 170px;
+      content: '';
+      background-color: $light-gray;
+      position: absolute;
+      top: -13px;
+  }
+
+  &:after {
+      height: 2px;
+      width: 70px;
+      content: '';
+      background-color: $orange;
+      position: absolute;
+      top: -13px;
+      left: 0;
+  }
+}
+
+hr {
+    margin: 30px auto;
+    border-color: rgba(241, 89, 34, .3);
+}
+
+strong {
+  font-weight: 700;
+}
+
+.text-link {
+  color: $orange;
+  transition: all .3s ease;
+  font-weight: 600;
+
+  &:hover{
+    color: $blue;
+  }
+
+}
+
+.page-title {
+
+	// Remove Foundation vcard styling from author page titles
+	.vcard {
+		border: 0px;
+		padding: 0px;
+	}
+}
+
+// Post meta
+.byline {
+	color: #999;
+	time {}
+}
+
+// Entry content
+.entry-content {
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.alignleft, img.alignleft {
+		margin-right: 1.5em;
+		display: inline;
+		float: left;
+	}
+	.alignright, img.alignright {
+		margin-left: 1.5em;
+		display: inline;
+		float: right;
+	}
+	.aligncenter, img.aligncenter {
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		clear: both;
+	}
+
+	video, object {
+		max-width: 100%;
+		height: auto;
+		}
+
+	pre {
+		background: #eee;
+		border: 1px solid #cecece;
+		padding: 10px;
+		}
+
+}
+
+.wp-caption {
+	max-width: 100%;
+	background: #eee;
+	padding: 5px;
+
+	// Images inside wp-caption
+	img {
+		max-width: 100%;
+		margin-bottom: 0;
+		width: 100%;
+	}
+
+	p.wp-caption-text {
+		font-size: 0.85em;
+		margin: 4px 0 7px;
+		text-align: center;
+	}
+}
+
+// Add Foundation styling to password protect button
+.post-password-form input[type="submit"] {
+	@include button;
+}
+
+.colored {
+    .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6, p, a, li, div {
+        color: $white;
+        transition: all .3s ease;
+    }
+
+    a:hover {
+      color: $orange;
+      transition: all .3s ease;
+    }
+}
+
+
+
+.background {
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.luminosity {
+  background-blend-mode: luminosity;
+  background-color: #FFF;
+}
+
+.gradient {
+  background-color: rgba(0,0,0,.65);
+  transition: all .3s ease;
+}
+
+.gradient-blue {
+    background-color: rgba(12, 35, 64, 0.82);
+    transition: all .3s ease;
+}
+
+.gradient-orange {
+    background-color: rgba(242, 88, 35, .8);
+    transition: all .3s ease;
+}
+
+.gradient-transparent {
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 1%, rgba(0,0,0,0) 6%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 1%,rgba(0,0,0,0) 6%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 1%,rgba(0,0,0,0) 6%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+
+.grey-background {
+    background-color: #fafafa;
+}
+
+.df-post-select-layout {
+    padding: 40px 0;
+}
+
+span.divider {
+    content: '';
+    height: 2px;
+    display: inline-block;
+    background-color: $light-gray;
+    margin-right: 10px;
+    vertical-align: middle;
+    position: relative;
+    flex: 2;
+
+    &:before {
+        height: 2px;
+        width: 15%;
+        content: '';
+        background-color: $orange;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.post-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.post-content {
+    padding: 10px;
+}
+/*********************
+Buttons
+*********************/
+
+.button {
+    border: 2px solid $orange;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+/*********************
+IMAGE GALLERY STYLES
+*********************/
+.gallery {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.gallery::before, .gallery::after {
+	content: ' ';
+	display: table;
+}
+.gallery::after {
+	clear: both;
+}
+.gallery.gallery-columns-1 > dl {
+	@include grid-column;
+}
+.gallery.gallery-columns-2 > dl {
+	@include grid-column(1 of 2);
+}
+.gallery.gallery-columns-3 > dl {
+	@include grid-column(1 of 3);
+}
+.gallery.gallery-columns-4 > dl {
+	@include grid-column(1 of 4);
+}
+.gallery.gallery-columns-5 > dl {
+	@include grid-column(1 of 5);
+}
+.gallery.gallery-columns-6 > dl {
+	@include grid-column(1 of 6);
+}
+.gallery.gallery-columns-7 > dl {
+	@include grid-column(1 of 7);
+}
+.gallery.gallery-columns-8 > dl {
+	@include grid-column(1 of 8);
+}
+.gallery dl {
+	width: 100%;
+	float: left;
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+}
+.gallery dl:last-child:not(:first-child) {
+  float: right;
+ }
+
+// Gallery caption styles
+.gallery-caption {}
+.size-full {}
+.size-large {}
+.size-medium {}
+.size-thumbnail {}
+
+/*********************
+PAGE NAVI STYLES
+*********************/
+.page-navigation {
+	margin-top: 1rem;
+}
+
+/*********************
+COMMENT STYLES
+*********************/
+#comments {
+	.commentlist {
+		margin-left: 0px;
+	}
+}
+
+#respond {
+	ul {
+		margin-left: 0px;
+	}
+}
+
+.commentlist {
+	li {
+		position: relative;
+		clear: both;
+		overflow: hidden;
+		list-style-type: none;
+		margin-bottom: 1.5em;
+		padding: 0.7335em 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		ul.children {
+			margin: 0;
+
+			li {}
+
+			.comment {}
+			.alt {}
+			.odd {}
+			.even {}
+			.depth-1 {}           // Change number for different depth
+			.byuser {}
+			.bypostauthor {}
+			.comment-author-admin {}
+
+		}
+	}
+
+	li[class*=depth-] {
+		margin-top: 1.1em;
+	}
+
+	li.depth-1 {
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	li:not(.depth-1) {
+		margin-left: 10px;
+		margin-top: 0;
+		padding-bottom: 0;
+	}
+
+	li.depth-2 {}
+	li.depth-3 {
+	}
+	li.depth-4 {}
+	li.depth-5 {}
+
+	// General comment classes
+	.alt {}
+	.odd {
+	}
+	.even {
+	}
+	.parent {}
+	.comment {}
+	.children {}
+	.pingback {}
+	.bypostauthor {}
+	.comment-author {}
+	.comment-author-admin {}
+	.thread-alt {}
+	.thread-odd {}
+	.thread-even {}
+
+	// vcard
+	.vcard {
+		margin-left: 50px;
+
+		cite.fn {
+			font-weight: 700;
+			font-style: normal;
+
+			a.url {}
+
+		}
+
+		time {
+			float: right;
+
+			a {
+				color: #999;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+			}
+
+		}
+
+		img.photo {}
+
+		img.avatar {
+			position: absolute;
+			left: 10px;
+			padding: 2px;
+			border: 1px solid #cecece;
+			background: #fff;
+		}
+
+	} // end .commentlist .vcard
+
+
+	// comment meta
+	.comment-meta {
+
+		a {}
+
+	}
+
+	.commentmetadata {
+
+		a {}
+
+	}
+
+	// comment content
+	.comment_content {
+
+		p {
+			margin: 0.7335em 0 1.5em;
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+
+	} // end .commentlist .comment_content
+
+	// comment reply link
+	.comment-reply-link {
+		float: right;
+
+		&:hover,
+		&:focus {
+
+		}
+
+	} // end .commentlist .comment-reply-link
+
+} // end .commentlist
+
+/*********************
+COMMENT FORM STYLES
+*********************/
+.respond-form {
+	margin: 1.5em 10px;
+	padding-bottom: 2.2em;
+
+	form {
+		margin: 0.75em 0;
+
+		li {
+			list-style-type: none;
+			clear: both;
+			margin-bottom: 0.7335em;
+
+			label,
+			small {
+				display: none;
+			}
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=url],
+		textarea {
+			padding: 3px 6px;
+			background: #efefef;
+			border: 2px solid #cecece;
+			line-height: 1.5em;
+
+			&:focus {
+				background: #fff;
+			}
+
+			// form validation
+			&:invalid {
+				outline: none;
+				border-color: #fbc2c4;
+				background-color: #f6e7eb;
+				-webkit-box-shadow: none;
+				   -moz-box-shadow: none;
+				    -ms-box-shadow: none;
+						box-shadow: none;
+			}
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=url] {
+			max-width: 400px;
+			min-width: 250px;
+		}
+
+		textarea {
+			resize: none;
+			width: 97.3%;
+			height: 150px;
+		}
+
+	}
+}
+
+// comment form title
+#comment-form-title {
+	margin: 0 0 1.1em;
+}
+
+// cancel comment reply link
+#cancel-comment-reply {
+	a {}
+}
+
+// logged in comments
+.comments-logged-in-as {}
+
+// allowed tags
+#allowed_tags {
+	margin: 1.5em 10px 0.7335em 0;
+}
+
+// No comments
+.nocomments {
+	margin: 0 20px 1.1em;
+}
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.default-page-sidebar {
+    margin-top: 50px;
+}
+.sidebar, .default-page-sidebar {
+  	li{
+  		list-style: none;
+  	}
+
+    .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
+        margin-bottom: 0;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+
+    h4.widgettitle {
+        position: relative;
+
+        &:before {
+            position: absolute;
+            background-image: url(/wp-content/themes/UTSA-Math/assets/images/orange-header-line.png);
+            top: -5px;
+            content: "";
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 50%;
+            height: 5px;
+            width: 40px;
+        }
+
+    }
+
+    span.rpwwt-post-title {
+        font-size: .8rem;
+    }
+
+    p {
+        font-size: .9rem;
+        font-style: italic;
+        margin: 0;
+    }
+
+    .share-icons {
+        text-align: center;
+
+        a {
+            margin: 20px 5px;
+        }
+    }
+
+    ul.menu{
+
+          display: block;
+          position: relative;
+          background-color: #fefefe;
+          margin-bottom: 30px;
+          border: 1px solid #e0e0e0;
+
+        ul.sub-menu {
+            display: none;
+        }
+
+
+
+        li.current-menu-item {
+            a{ color: $orange;}
+        }
+
+        a {
+            color: $blue;
+            font-style: normal;
+            border-bottom: 1px solid $light-gray;
+            font-size: .9rem;
+            transition: all .3s ease;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+
+        li.menu-item-has-children{
+            position: relative;
+
+            &:before {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                margin-top: -.5rem;
+                content: "\f107";
+                font-family: FontAwesome;
+                color: #f28236;
+            }
+        }
+
+        li.menu-item-has-children.expanded {
+
+            &:before {
+                content: "\f106";
+            }
+        }
+
+        li.menu-item-has-children.expanded > ul.sub-menu {
+            display: block;
+
+            a {
+                padding-left: 30px;
+                font-size: .8rem;
+                color: $orange;
+            }
+        }
+
+        
+    }
+}
+
+.widget {
+	ul {
+		margin: 0;
+	}
+        padding: 20px 0;
+}
+/*********************
+FOOTER STYLES
+*********************/
+.footer {
+	clear: both;
+
+  border-bottom: 4px solid $orange;
+
+  .inner-footer {
+    background-color: $blue;
+    padding: 30px 0;
+  }
+
+  .footer-cta {
+    .gradient {
+        padding: 110px 0;
+    }
+
+    .h2 {
+      margin-bottom: 0;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+  }
+
+  .footer-logo {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  .address {
+      display: block;
+      margin-bottom: 25px;
+
+  }
+
+  a.phone, a.fax {
+      display: block;
+
+      span {
+        font-weight: 600;
+        padding-right: 5px;
+      }
+  }
+
+  hr {
+    border-bottom: 2px solid $orange;
+    margin: 0 auto;
+  }
+
+  .gform_body input {
+      background-color: transparent;
+      border-radius: 100px;
+      padding: 0 20px !important;
+      border-color: #224065;
+  }
+
+    /* form placeholder overrides - have to use !important or this doesn't work
+    --------------------------------------------- */
+    ::-webkit-input-placeholder { /* Chrome */
+      color: #7D96B6 !important;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: #7D96B6 !important;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: #7D96B6 !important;
+      opacity: 1 !important;
+    }
+    :-moz-placeholder { /* Firefox 4 - 18 */
+      color: #7D96B6 !important;
+      opacity: 1 !important;
+    }
+
+    .gform_wrapper .gform_heading {
+        margin-bottom: 0px;
+    }
+    .gform_wrapper span.gform_description {
+      display: none;
+    }
+
+    .gform_wrapper h3.gform_title {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    i {
+        font-size: 1.4rem;
+    }
+}
+
+.social-icons a{
+    margin: 0 13px;
+}
+
+.inner-footer {
+    padding: 40px 0;
+}
+
+
+/*********************
+VISUAL EDITOR STYLES
+*********************/
+// Makes content look better in visual editor
+body#tinymce {
+   	margin: 20px;
+}
+
+/*********************
+PLUGIN STYLES
+*********************/
+// Makes Gravity Forms play nice with Foundation Form styles
+.gform_body ul {
+    list-style: none outside none;
+    margin: 0;
+}
+
+@media only screen and (min-width: 641px) {
+  .gform_wrapper form.gf_simple_horizontal div.gform_body {
+      width: 100% !important;
+      max-width: 270px;
+  }
+}
+
+/*********************
+Share Icons
+*********************/
+
+.share-icon {
+    height: 40px;
+    width: 40px;
+    box-shadow: 3px 7px 20px 0px #d4d3d3;
+    text-align: center;
+    padding: 9px 0;
+    border-radius: 100px;
+    margin: auto auto 20px auto;
+    display: inline-block;
+
+    .fa-facebook {
+        color: #3b5998;
+    }
+
+    .fa-twitter {
+        color: #1DA1F2;
+    }
+
+    .fa-linkedin {
+        color: #0077B5;
+    }
+}

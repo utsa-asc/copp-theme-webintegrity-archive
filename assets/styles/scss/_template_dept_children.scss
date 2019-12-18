@@ -1,0 +1,276 @@
+/*Menu*/
+.inner.hero.dept-hero {
+  border-bottom: none;
+}
+
+
+#child-menu {
+    background-color: $blue;
+    text-align: center;
+
+    ul.parent-page {
+        display: block;
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      color: $white;
+      padding: 20px 20px;
+      font-size: .9rem;
+      text-transform: uppercase;
+      border-bottom: 3px solid transparent;
+      transition: all .3s ease;
+
+      &:hover {
+        border-bottom: 3px solid $orange;
+        transition: all .3s ease;
+      }
+
+    }
+
+    ul.submenu.is-dropdown-submenu.first-sub.vertical {
+      background-color: $blue;
+      top: 100%;
+      margin-left: 0;
+      //right: 50%;
+      //left: -25%;
+
+      a {
+        border-bottom: none;
+      }
+    }
+
+    .dropdown.menu>li.is-dropdown-submenu-parent>a:after {
+      display: none;
+    }
+
+    ul.submenu {
+      .submenu {
+        position: absolute;
+        margin-left: 0px;
+      }
+
+      li.menu-item-has-children:hover .submenu {
+        position: absolute;
+        margin-left: 0px;
+      }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+  #child-menu ul.submenu.is-dropdown-submenu.first-sub.vertical {
+    background-color: $blue;
+    display: block;
+    right: 0;
+    left: 0;
+    position: relative;
+  }
+
+  #child-menu {
+
+    ul.parent-page {
+      text-align: left;
+    }
+    li {
+      display: block;
+    }
+    a {
+      padding: 10px;
+      border: none;
+
+      &:hover {
+        color: $orange;
+        border: none;
+      }
+    }
+  }
+}
+
+
+/*About Page*/
+
+.image-caption {
+  margin: 20px auto;
+   p, a {
+     font-size: .9rem;
+   }
+}
+
+section.notable-alumni {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+
+    .alumn-image {
+      height: 100%;
+    }
+
+    .h4 {
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+
+    .h5 {
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+
+    .degree {
+      color: $orange;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+}
+
+section.past-notable-alumni {
+  background-color: #f9f9f9;
+  padding: 40px 0 60px 0;
+
+  .alumn-image {
+    height: 250px;
+  }
+
+  .date-container {
+      margin-bottom: 15px;
+  }
+
+  .h5 {
+      text-transform: uppercase;
+      margin-top: 20px;
+      margin-bottom: 3px;
+  }
+
+  .h6 {
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .degree {
+    color: $orange;
+    font-weight: 600;
+  }
+
+
+}
+
+.date-container {
+    display: flex;
+}
+
+.alumni-date {
+  color: $medium-gray;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* Programs Page */
+
+.repeater-block {
+    position: relative;
+    height: 250px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid $orange;
+
+    .gradient-transparent {
+      height: 100%;
+    }
+
+    .h3 {
+       position: absolute;
+       bottom: 0px;
+       left: 10px;
+     }
+}
+
+// .description-box p {
+//     font-weight: 400;
+// }
+
+.program-container {
+  margin: 80px auto;
+
+  a.text-link  {
+    color: $dark-gray;
+    text-transform: uppercase;
+    font-size: .9rem;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+/* Current Students */
+
+.current-student-container {
+    margin: 80px auto;
+}
+
+.info-pages {
+  .h5, p {
+    margin: 0;
+  }
+
+  .h4 {
+    margin-bottom: 40px;
+
+    span {
+      text-transform: uppercase;
+      font-size: 1rem;
+      color: $orange;
+      display: block;
+    }
+  }
+}
+
+
+/* Faculty */
+
+.openings-container {
+  .h5, p {
+    margin: 0;
+  }
+
+  .h4 {
+    margin-bottom: 40px;
+
+    span {
+      text-transform: uppercase;
+      font-size: 1rem;
+      color: $orange;
+      display: block;
+    }
+  }
+}
+
+.single-opening {
+  padding: 20px 0;
+}
+
+/* Research */
+
+.research-container {
+  margin: 80px auto;
+}
+
+.research-year-group {
+    margin-bottom: 60px;
+
+    hr {
+      border: 1px solid $light-gray;
+      width: 98%;
+    }
+
+  .h5 {
+    margin-bottom: 50px;
+  }
+
+  a {
+    padding: 10px 20px;
+    font-weight: 600;
+  }
+}

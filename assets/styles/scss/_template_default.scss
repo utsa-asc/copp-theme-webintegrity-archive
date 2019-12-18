@@ -1,0 +1,76 @@
+.external-link {
+    a {
+        color: $orange;
+    }
+
+    hr {
+        margin: 20px auto 40px auto;
+    }
+}
+
+.df-header-layout{
+    h1 {
+        position: relative;
+        margin-top: 1rem;
+    }
+    h1:before {
+        position: absolute;
+        background-image: url(/wp-content/themes/UTSA-Math/assets/images/orange-header-line.png);
+        top: -5px;
+        content: "";
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
+        height: 5px;
+        width: 60px;
+    }
+}
+
+.df-wysiwyg-layout {
+    margin-top: 1rem;
+}
+
+.image-container {
+    display: none;
+}
+
+blockquote {
+    color: $dark-gray;
+    position: relative;
+    display: inline-block;
+    border-left: none;
+    border-right: none;
+    max-width:100%;
+    margin: 40px 60px;
+    text-align: center;
+
+    p {
+        color: $dark-gray;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}
+
+.recent-posts-widget-with-thumbnails {
+    ul {
+        padding: 20px 0;
+    }
+
+    a {
+        color: $blue;
+        font-style: normal;
+    }
+
+    .rpwwt-post-date {
+        font-color: $font-grey;
+        font-size: .8rem;
+    }
+}
+
+table tbody tr:nth-child(2n) {
+  background-color: transparent;
+}
+
+
+@media only screen and (min-width:1024px) {
+}
