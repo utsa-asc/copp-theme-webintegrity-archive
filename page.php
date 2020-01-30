@@ -59,7 +59,15 @@
               <section class="grid-container">
                 <div class="grid-x grid-margin-x grid-padding-x">
                     <div class="small-12 cell">
-                        <div class='h2 fancy-header'><?php the_title(); ?> - <?php echo $dept_title; ?></div>
+                      <?php
+                        $this_title = get_the_title();
+                        if ($this_title == $dept_title):
+                          $dept_title = '';
+                        else:
+                          $this_title = $this_title . ' - ' . $dept_title;
+                        endif;
+                       ?>
+                        <div class='h2 fancy-header'><?php echo $this_title; ?></div>
                     </div>
                 </div>
                 <div class='grid-x grid-margin-x grid-padding-x'>

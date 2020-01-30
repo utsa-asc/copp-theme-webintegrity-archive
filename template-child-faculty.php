@@ -237,4 +237,5 @@ $desc = get_field('page_description', $id);
 
 
     <?php endwhile; endif;
- get_footer(); ?>
+    get_dept_footer($dept_title, true);
+    get_footer(); ?>

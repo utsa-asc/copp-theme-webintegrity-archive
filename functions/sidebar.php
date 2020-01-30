@@ -10,7 +10,7 @@ function joints_register_sidebars() {
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
 	));
-  
+
   register_sidebar(array(
 		'id' => 'news',
 		'name' => __('News', 'jointswp'),

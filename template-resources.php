@@ -66,4 +66,5 @@ get_header(); ?>
 
             </div> <!-- end #content -->
     <?php endwhile; endif; ?>
-<?php get_footer(); ?>
+<?php get_dept_footer($dept_title, true);
+get_footer(); ?>

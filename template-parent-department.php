@@ -1,15 +1,13 @@
 <?php
-
 /*
  * Template Name: Parent Department
  */
 
 if(get_field('header_image')) {
-    $image = get_field('header_image');
+  $image = get_field('header_image');
 } else {
-     $image =  get_field('banner_image', 'option');
+  $image =  get_field('banner_image', 'option');
 }
-
 get_header(); ?>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="inner hero dept-hero colored template-parent-department" style="background-image: url(<?php echo $image; ?>);">
@@ -71,4 +69,5 @@ get_header(); ?>
         </div> <!-- end #content -->
     <?php endwhile; endif; ?>
 
-<?php get_footer(); ?>
+<?php get_dept_footer($dept_title, true);
+get_footer(); ?>

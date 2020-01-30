@@ -13,7 +13,7 @@
             <div class="grid-container">
                 <div class="grid-x grid-margin-x grid-padding-x align-middle">
                     <div class="cell">
-                        <form role="search" method="get" class="search-form" action="http://www.utsa.edu/search/searchresults.html">
+                        <form role="search" method="get" class="search-form" action="//www.utsa.edu/search/searchresults.html">
 							<input name="cx" type="hidden" value="000238266656426684962:mzli4pte7ko"/>
 <input name="cof" type="hidden" value="FORID:11"/>
                             <input type="search" class="search-field" id="q" name="q" placeholder="<?php echo esc_attr_x( 'Search...', 'jointswp' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'jointswp' ) ?>" />
